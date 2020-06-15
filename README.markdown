@@ -23,8 +23,16 @@ Note that the courses are not aligned in the image according to the course sched
 
 ## Issues
 
-* 811379A  Käyttöliittymien perusteet mentions a prerequisite 811177P which is a deprecated course.
-* 811366A Projektitoiminta lists many old deprecated courses as prerequisites.
+See [repository issues](https://github.com/anttijuu/tol-courses-graph/issues) for reporting any problems with the data, or for things to fix yourself.
+
+If you find some problems, do this:
+
+1. Report the problem as an issue
+1. If you can fix it yourself, fork the repo
+1. In your fork, create a branch, one for one issue
+1. Fix the issue in that branch of yours
+1. Provide a pull request to this repo, fixing the issue
+1. I will then include your fix in the repo, if it is OK.
 
 
 ## Who did this
