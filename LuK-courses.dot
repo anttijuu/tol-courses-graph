@@ -1,12 +1,18 @@
 digraph TOLLuK {
    node [shape=record, style="rounded,filled"]
    
+   subgraph cluster_Legend {
+      graph[style=dotted]
+      label="Legend"
+      legend [label="{ Course code | Course name | year / period }"]
+   } 
+
    subgraph cluster_Yleiset {
       graph[style=dotted]
       label="Yleiset"
       node [fillcolor=gainsboro]
-      c030005P [label="{ 030005P | Tiedonhankintakurssi | 1 }"]
-      c0006 [label="{ xxxxx | Suuntaa uralle viestinnän keinoin | ? }"]
+      c030005P [label="{ 030005P | Tiedonhankintakurssi | ?/1 }"]
+      c0006 [label="{ xxxxx | Suuntaa uralle viestinnän keinoin | ?/? }"]
    }
    
    subgraph cluster_Johdanto {
