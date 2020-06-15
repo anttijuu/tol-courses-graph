@@ -1,0 +1,96 @@
+digraph TOLLuK {
+   node [shape=record, style="rounded,filled"]
+   
+   subgraph Yleiset {
+      node [fillcolor=gainsboro]
+      c030005P [label="{ 030005P | Tiedonhankintakurssi | 1 }"]
+   }
+   
+   subgraph Johdanto {
+      node [fillcolor=yellow]
+      c810020Y [label="{ 810020Y | Orientoivat opinnot | 1/1-2 }"]
+      c810136P [label="{ 810136P | Johdatus tietojenkäsittelytieteisiin | 1/1 }"]
+      c811168P [label="{ 811168P | Tietoturva | 1/3 }"]
+      c811174P [label="{ 811174P | Ohjelmistoliiketoiminnan perusteet | 1/3 }"]
+      c811102P [label="{ 811102P | Laitteet ja tietoverkot | 1/1 }"]
+
+      c810136P -> c811168P
+      c811102P -> c811168P
+      c810136P -> c811174P
+   }
+   
+   subgraph Ohjelmointi {
+      node [fillcolor=gold1]
+      c811104P [label="{ 811104P | Ohjelmointi 1 | 1/1-2 }"]
+      c811322A [label="{ 811322A | Ohjelmointi 2 | 1/3-4 }"]
+      c811325A [label="{ 811325A | Tietokannat | 2/1 }"]
+      c811312A [label="{ 811312A | Tietorakenteet ja algoritmit | 2/2 }"]
+      c811367A [label="{ 811367A | Ohjelmointi 3 | 2/3 }"]
+      c811368A [label="{ 811368A | Ohjelmointi 4 | 2/4 }"]
+      
+      c811104P -> c811322A
+      c811312A -> c811367A
+      c811367A -> c811368A
+      c811325A -> c811312A
+      c811322A -> c811325A
+   }
+   
+   subgraph Ohjelmistokehitys {
+      node [fillcolor=darkolivegreen1]
+      c811103P [label="{ 811103P | Johdatus ohjelmistotuotantoon | 1/2 }"]
+      c811391A [label="{ 811391A | Vaatimusmäärittely | 1/4 }"]
+      c811301A [label="{ 811301A | Ohjelmistojen mallinnus ja suunnittelu | 2/1 }"]
+      c811306A [label="{ 811306A | Ohjelmistojen laatu ja testaus | 2/2 }"]
+      c811319A [label="{ 811319A | Tietomallinnus ja -suunnittelu | 2/3 }"]
+      c815345A [label="{ 815345A | Ohjelmistoarkkitehtuurit | 2/4 }"]
+      
+      c810136P -> c811103P
+      c811103P -> c811391A
+      c811391A -> c811301A
+      c811322A -> c811301A
+      c811301A -> c811306A
+      c811306A -> c811319A
+      c811325A -> c811319A
+      c811319A -> c815345A
+   }
+   
+   subgraph IhminenOrganisaatio {
+      node [fillcolor=antiquewhite]
+      c811166P [label="{ 811166P | Tietojärjestelmien perusteet | 1/2 }"]
+      c812360A [label="{ 812360A | Tietojärjestelmien mallintaminen, suunnittelu ja kehitys | 1/4 }"]
+      c811167P [label="{ 811167P | Tietojärjestelmien suunnittelun perusteet | 2/1 }"]
+      c811379A [label="{ 811379A | Käyttöliittymien perusteet | 2/2 }"] # Ihminen tietotekniikan käyttäjänä ja kehittäjänä 811177P does not exist.
+      c812332A [label="{ 812332A | Tietojärjestelmien suunnittelu | 2(3)/3 }"]
+      c813316A [label="{ 813316A | Business Process Modelling | 3/4 }"]
+      
+      c811166P -> c812360A
+      c811167P -> c812332A
+   }
+   
+   subgraph Huipennus {
+      node [fillcolor=azure]
+      c811397A [label="{ 811397A | Projektitoiminnan perusteet | 2/4 }"]
+      c811366A [label="{ 811366A | Projektitoiminta | 3/3-4 }"] # Lists many old obsolete courses as prerequisites!
+      c811393A [label="{ 811393A | Johdatus tutkimustyöhön | 2/3 }"]
+      c811383A [label="{ 811383A | LuK-tutkielma | 3/3-4 }"]
+   
+      c030005P -> c811393A
+      c811393A -> c811383A
+      c030005P -> c811383A
+      c810136P -> c811383A
+   }
+   
+   subgraph Legend {
+      node [shape=box]
+      rankdir=TB
+      label="Legend"
+      style=filled
+      rank=source
+      yleiset [fillcolor=gainsboro, label="Yleiset"]
+      johdanto [fillcolor=yellow, label="Johdanto"]
+      ohjelmointi [fillcolor=gold1, label="Ohjelmointi"]
+      kehitys [fillcolor=darkolivegreen1, label="Ohjelmistokehitys"]
+      ihminen [fillcolor=antiquewhite, label="Ihminen ja organisaatio"]
+      huipennus [fillcolor=azure, label="Huipennus"]
+   }
+}
