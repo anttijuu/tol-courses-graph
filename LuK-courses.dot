@@ -1,13 +1,17 @@
 digraph TOLLuK {
    node [shape=record, style="rounded,filled"]
    
-   subgraph Yleiset {
+   subgraph cluster_Yleiset {
+      graph[style=dotted]
+      label="Yleiset"
       node [fillcolor=gainsboro]
       c030005P [label="{ 030005P | Tiedonhankintakurssi | 1 }"]
       c0006 [label="{ xxxxx | Suuntaa uralle viestinnän keinoin | ? }"]
    }
    
-   subgraph Johdanto {
+   subgraph cluster_Johdanto {
+      graph[style=dotted]
+      label="Johdanto"
       node [fillcolor=yellow]
       c810020Y [label="{ 810020Y | Orientoivat opinnot | 1/1-2 }"]
       c810136P [label="{ 810136P | Johdatus tietojenkäsittelytieteisiin | 1/1 }"]
@@ -20,7 +24,9 @@ digraph TOLLuK {
       c810136P -> c811174P
    }
    
-   subgraph Ohjelmointi {
+   subgraph cluster_Ohjelmointi {
+      graph[style=dotted]
+      label="Ohjelmointi"
       node [fillcolor=gold1]
       c811104P [label="{ 811104P | Ohjelmointi 1 | 1/1-2 }"]
       c811322A [label="{ 811322A | Ohjelmointi 2 | 1/3-4 }"]
@@ -36,7 +42,9 @@ digraph TOLLuK {
       c811322A -> c811325A
    }
    
-   subgraph Ohjelmistokehitys {
+   subgraph cluster_Ohjelmistokehitys {
+      graph[style=dotted]
+      label="Ohjelmistokehitys"
       node [fillcolor=darkolivegreen1]
       c811103P [label="{ 811103P | Johdatus ohjelmistotuotantoon | 1/2 }"]
       c811391A [label="{ 811391A | Vaatimusmäärittely | 1/4 }"]
@@ -55,7 +63,9 @@ digraph TOLLuK {
       c811319A -> c815345A
    }
    
-   subgraph IhminenOrganisaatio {
+   subgraph cluster_IhminenOrganisaatio {
+      graph[style=dotted]
+      label="Ihminen ja organisaatio"
       node [fillcolor=antiquewhite]
       c811166P [label="{ 811166P | Tietojärjestelmien perusteet | 1/2 }"]
       c812360A [label="{ 812360A | Tietojärjestelmien mallintaminen, suunnittelu ja kehitys | 1/4 }"]
@@ -71,7 +81,9 @@ digraph TOLLuK {
       c0003 -> c0004
    }
    
-   subgraph Huipennus {
+   subgraph cluster_Huipennus {
+      graph[style=dotted]
+      label="Huipennus"
       node [fillcolor=azure]
       c811397A [label="{ 811397A | Projektitoiminnan perusteet | 2/4 }"]
       c0005 [label="{ xxxxx | Kandidaattiprojekti | 3/3-4 }"]
@@ -89,17 +101,4 @@ digraph TOLLuK {
       c0003 -> c0005
    }
    
-   subgraph Legend {
-      node [shape=box]
-      rankdir=TB
-      label="Legend"
-      style=filled
-      rank=source
-      yleiset [fillcolor=gainsboro, label="Yleiset"]
-      johdanto [fillcolor=yellow, label="Johdanto"]
-      ohjelmointi [fillcolor=gold1, label="Ohjelmointi"]
-      kehitys [fillcolor=darkolivegreen1, label="Ohjelmistokehitys"]
-      ihminen [fillcolor=antiquewhite, label="Ihminen ja organisaatio"]
-      huipennus [fillcolor=azure, label="Huipennus"]
-   }
 }
