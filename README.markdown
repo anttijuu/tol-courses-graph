@@ -16,8 +16,13 @@ Or alternatively, use the `dot` tool according to your preferences from the term
 ```
 dot -Tpng LuK-courses.dot -o LuK-courses.png
 ```
+For generating SVG graphics file instead, do:
 
-See the [image](LuK-courses.png) in the repo depicting a current sample of a generated image.
+```
+dot -Tsvg LuK-courses.dot -o LuK-courses.svg
+```
+
+See the [image](LuK-courses.png) or the [svg file](LuK-courses.svg) in the repo depicting a current sample of a generated image.
 
 Note that the courses are not aligned in the image according to the course scheduling. Only prerequisite dependencies are shown, scheduling is not visible in the image layout. See the study year / study period part of the course box for scheduling information.
 
