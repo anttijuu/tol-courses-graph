@@ -3,8 +3,8 @@ digraph TOLLuK {
    
    subgraph cluster_Legend {
       graph[style=dotted]
-      label="Legend"
-      legend [label="{ Kurssikoodi | Kurssin nimi | { opintovuosi | opintoperiodi } }"]
+      label="Selite"
+      legend [label="{ Kurssikoodi | Kurssin nimi | { opintovuosi | periodi } }"]
       URL="https://github.com/anttijuu/tol-courses-graph" # URL linkable in SVG and some other formats.
    } 
 
@@ -13,7 +13,7 @@ digraph TOLLuK {
       label="Yleiset"
       node [fillcolor=gainsboro]
       c030005P [label="{ 030005P | Tiedonhankintakurssi | { ? | 1 } }"]
-      c900105Y [label="{  900105Y | Suuntaa uralle viestinnän keinoin | { ? | ? } }"]
+      c900105Y [label="{ 900105Y | Suuntaa uralle viestinnän keinoin | { 3 | ? } }"]
    }
    
    subgraph cluster_Johdanto {
