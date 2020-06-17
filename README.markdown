@@ -35,7 +35,7 @@ If you find some problems:
 1. Report the problem as an issue in the repository.
 1. If you can fix it yourself, fork the repo and pull it to your local machine.
 1. In your fork, create a branch, one for each issue.
-1. Fix the issue in that branch of yours.
+1. Fix the issue in that branch of yours, by editing `LuK-courses.dot` file.
 1. Test that the image is generated properly with your fix.
 1. Commit the changes to your local repo and then push to your fork in GitHub.
 1. Provide a pull request to this repo, fixing the issue.
