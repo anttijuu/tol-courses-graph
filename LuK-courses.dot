@@ -1,3 +1,5 @@
+// (c) Antti Juustila 2020. INTERACT Research Group, University of Oulu, Finland.
+// Licensed under MIT
 digraph TOLLuK {
    node [shape=record, style="rounded,filled"]
    
