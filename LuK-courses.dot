@@ -78,10 +78,10 @@ digraph TOLLuK {
       node [fillcolor=antiquewhite]
       c811166P [label="{ 811166P | Tietojärjestelmien perusteet | { 1 |2 } }"]
       c812360A [label="{ 812360A | Tietojärjestelmien mallintaminen, suunnittelu ja kehitys | { 1 | 4 } }"]
-      c0001 [label="{ xxxxxx | Ihmislähtöinen suunnittelu | { 2 | 1 } }"]
-      c0002 [label="{ xxxxxx | Tietojärjestelmien hankinta, käyttöönotto ja hallinta | { 2 | 2 } }"]
-      c0003 [label="{ xxxxxx | Liiketoimintaprosessien johtaminen ja mallintaminen | { 2 | 3 } }"]
-      c0004 [label="{ xxxxxx | Data-analytiikka liiketoiminnan tukena | { 3 | 4 } }"]      
+      c0001 [label="{ 812363A | Ihmislähtöinen suunnittelu | { 2 | 1 } }"]
+      c0002 [label="{ 812361A | Tietojärjestelmien hankinta, käyttöönotto ja hallinta | { 2 | 2 } }"]
+      c0003 [label="{ 812362A | Liiketoimintaprosessien johtaminen ja mallintaminen | { 2 | 3 } }"]
+      c0004 [label="{ 812364A | Data-analytiikka liiketoiminnan tukena | { 3 | 4 } }"]      
 
       c811166P -> c812360A
       c812360A -> c0001
@@ -95,7 +95,7 @@ digraph TOLLuK {
       label="Huipennus"
       node [fillcolor=azure]
       c811397A [label="{ 811397A | Projektitoiminnan perusteet | { 2 | 4 } }"]
-      c0005 [label="{ xxxxx | Kandidaattiprojekti | { 3 | 3-4 } }"]
+      c0005 [label="{ 811398A | Kandidaattiprojekti | { 3 | 3-4 } }"]
       c811393A [label="{ 811393A | Johdatus tutkimustyöhön | { 2 | 3 } }"]
       c811383A [label="{ 811383A | LuK-tutkielma | { 3 | 3-4 } }"]
    
