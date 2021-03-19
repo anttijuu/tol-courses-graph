@@ -1,6 +1,9 @@
 # TOL BSc Course Dependencies
 
-The GraphViz dot file `LuK-courses.dot`in this repository maps the dependencies of the Bachelor level courses (LuK in Finnish) at the study program of [Information Processing Science](https://www.oulu.fi/tol/) at the [University of Oulu](https://www.oulu.fi), Finland.
+The GraphViz dot file `LuK-courses.dot` in this repository maps the dependencies of the Bachelor of Science level courses (LuK in Finnish) at the study program of [Information Processing Science](https://www.oulu.fi/tol/) at the [University of Oulu](https://www.oulu.fi), Finland.
+
+Another dot file, `LuK-courses-yearly.dot` models the courses organized by year, using the same color coding for course topic areas, as in the first diagram.
+
 
 ## Dependencies
 
@@ -9,9 +12,7 @@ Requires that [GraphViz](https://www.graphviz.org) is installed. For installatio
 
 ## How to use it
 
-Use the provided script to generate a png image of the dependencies.
-
-Or alternatively, use the `dot` tool according to your preferences from the terminal app, e.g.
+Use the `dot` tool according to your preferences from the terminal app, e.g.
 
 ```
 dot -Tpng LuK-courses.dot -o LuK-courses.png
@@ -22,9 +23,17 @@ For generating SVG graphics file instead, do:
 dot -Tsvg LuK-courses.dot -o LuK-courses.svg
 ```
 
-See the [image](LuK-courses.png) or the [svg file](LuK-courses.svg) in the repo depicting a current sample of a generated image.
+Or use the provided script to generate a png image of the dependencies.
 
-Note that the courses are not aligned in the image according to the course scheduling. Only prerequisite dependencies are shown, scheduling is not visible in the image layout. See the study year / study period part of the course box for scheduling information.
+For generating the course map grouped by year, do
+
+```
+dot -Tpng LuK-courses-yearly.dot -o LuK-courses-yearly.png
+```
+
+See the [image](LuK-courses.png) or the [svg file](LuK-courses.svg) in the repo depicting a current sample of a generated image. Note that the courses are not aligned in the image according to the course scheduling. Only prerequisite dependencies are shown, scheduling is not visible in the image layout. See the study year / study period part of the course box for scheduling information.
+
+The image grouping the [courses by study year](LuK-courses-yearly.png) is also viewable, if you prefer to view courses grouped by year.
 
 ## Issues
 

@@ -1,21 +1,29 @@
 // (c) Antti Juustila 2020. INTERACT Research Group, University of Oulu, Finland.
 // Licensed under MIT
 digraph TOLLuK {
+   rankdir = LR;
    node [shape=record, style="rounded,filled"]
    
    subgraph cluster_Legend {
       graph[style=dotted]
       label="Selite"
+      node [fillcolor=pink]
       legend [label="{ Kurssikoodi | Kurssin nimi | { opintovuosi | periodi } }"]
       URL="https://github.com/anttijuu/tol-courses-graph" # URL linkable in SVG and some other formats.
    } 
 
    subgraph cluster_Yleiset {
       graph[style=dotted]
-      label="Yleiset"
+      label="Yleiset ja kieliopinnot"
       node [fillcolor=gainsboro]
-      c030005P [label="{ 030005P | Tiedonhankintakurssi | { ? | 1 } }"]
-      c900105Y [label="{ 900105Y | Suuntaa uralle viestinnän keinoin | { 3 | ? } }"]
+      c902164Y [label="{ 902164Y | English Communication for Information Processing, Reading | { 1 | 3 } }"]
+      c902165Y [label="{ 902165Y | English Communication for Information Processing, Oral Skills | { 1 | 4 } }"]
+      c901048Y [label="{ 901048Y | Toinen kotimainen kieli (ruotsi), kirjallinen kielitaito | { 1 | 1 } }"]
+      c901049Y [label="{ 901049Y | Toinen kotimainen kieli (ruotsi), suullinen kielitaito  | { 1 | 2 } }"]
+      c030005P [label="{ 030005P | Tiedonhankintakurssi | { 1 | 1-2 } }"]
+      c900105Y [label="{ 900105Y | Suuntaa uralle viestinnän keinoin | { 3 | 3 } }"]
+
+      c902164Y -> c902165Y
    }
    
    subgraph cluster_Johdanto {
@@ -78,16 +86,16 @@ digraph TOLLuK {
       node [fillcolor=antiquewhite]
       c811166P [label="{ 811166P | Tietojärjestelmien perusteet | { 1 |2 } }"]
       c812360A [label="{ 812360A | Tietojärjestelmien mallintaminen, suunnittelu ja kehitys | { 1 | 4 } }"]
-      c0001 [label="{ 812363A | Ihmislähtöinen suunnittelu | { 2 | 1 } }"]
-      c0002 [label="{ 812361A | Tietojärjestelmien hankinta, käyttöönotto ja hallinta | { 2 | 2 } }"]
-      c0003 [label="{ 812362A | Liiketoimintaprosessien johtaminen ja mallintaminen | { 2 | 3 } }"]
-      c0004 [label="{ 812364A | Data-analytiikka liiketoiminnan tukena | { 3 | 4 } }"]      
+      c812363A [label="{ 812363A | Ihmislähtöinen suunnittelu | { 2 | 1 } }"]
+      c812361A [label="{ 812361A | Tietojärjestelmien hankinta, käyttöönotto ja hallinta | { 2 | 2 } }"]
+      c812362A [label="{ 812362A | Liiketoimintaprosessien johtaminen ja mallintaminen | { 2 | 3 } }"]
+      c812364A [label="{ 812364A | Data-analytiikka liiketoiminnan tukena | { 3 | 4 } }"]      
 
       c811166P -> c812360A
-      c812360A -> c0001
-      c0001 -> c0002
-      c0002 -> c0003
-      c0003 -> c0004
+      c812360A -> c812363A
+      c812363A -> c812361A
+      c812361A -> c812362A
+      c812362A -> c812364A
    }
    
    subgraph cluster_Huipennus {
@@ -95,19 +103,22 @@ digraph TOLLuK {
       label="Huipennus"
       node [fillcolor=azure]
       c811397A [label="{ 811397A | Projektitoiminnan perusteet | { 2 | 4 } }"]
-      c0005 [label="{ 811398A | Kandidaattiprojekti | { 3 | 3-4 } }"]
-      c811393A [label="{ 811393A | Johdatus tutkimustyöhön | { 2 | 3 } }"]
+      c811398A [label="{ 811398A | Kandidaattiprojekti | { 3 | 3-4 } }"]
+      c811393A [label="{ 811393A | Johdatus tutkimustyöhön | { 3 | 3 } }"]
       c811383A [label="{ 811383A | LuK-tutkielma | { 3 | 3-4 } }"]
+      c813307A [label="{ 813307A | Kypsyysnäyte | { 3 | 4 } }"]
+
    
       c030005P -> c811393A
       c900105Y -> c811393A
       c811393A -> c811383A
       c030005P -> c811383A
       c810136P -> c811383A
-      c811397A -> c0005
-      c815345A -> c0005
-      c811368A -> c0005
-      c0003 -> c0005
+      c811397A -> c811398A
+      c815345A -> c811398A
+      c811368A -> c811398A
+      c812362A -> c811398A
+      c811383A -> c813307A
    }
    
 }
