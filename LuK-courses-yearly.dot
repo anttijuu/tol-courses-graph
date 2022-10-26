@@ -95,9 +95,9 @@ strict digraph TOLLuK {
          c811368A [label="{ 811368A | Ohjelmointi 4 | { 2 | 4 } }"]
 
          c811104P -> c811322A
-         c811312A -> c811367A
+         c811322A -> c811367A
          c811367A -> c811368A
-         c811325A -> c811312A
+         c811322A -> c811312A
          c811322A -> c811325A
       }
 
@@ -166,8 +166,8 @@ strict digraph TOLLuK {
          node [fillcolor=azure]
          c811398A [label="{ 811398A | Kandidaattiprojekti | { 3 | 3-4 } }"]
          c811393A [label="{ 811393A | Johdatus tutkimustyöhön | { 3 | 3 } }"]
-         c811383A [label="{ 811383A | LuK-tutkielma | { 3 | 3-4 } }"]
-         c813307A [label="{ 813307A | Kypsyysnäyte | { 3 | 4 } }"]
+         c811383A [label="{ 811383A | LuK-tutkielma | { 3 | 3-4 } }"]
+         c813307A [label="{ 813307A | Kypsyysnäyte | { 3 | 4 } }"]
 
          c030005P -> c811393A
          c030005P -> c811383A

@@ -57,4 +57,4 @@ Antti Juustila, lecturer at the [INTERACT Research Unit](https://interact.oulu.f
 
 ## License
 
-MIT License. Copyright (c) 2020 Antti Juustila. See LICENSE for details.
+MIT License. Copyright (c) 2020-2022 Antti Juustila. See LICENSE for details.
