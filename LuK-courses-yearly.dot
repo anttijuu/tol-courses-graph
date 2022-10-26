@@ -15,7 +15,7 @@ strict digraph TOLLuK {
 
    subgraph cluster_year_1 {
       label="1. vuosi"
-      graph[style=dotted]
+      graph[style=bold]
       
       subgraph cluster_lang {
          label="Kieliopinnot"
@@ -83,7 +83,7 @@ strict digraph TOLLuK {
 
    subgraph cluster_year_2 {
       label="2. vuosi"
-      graph[style=dotted]
+      graph[style=bold]
 
       subgraph cluster_programming {
          graph[style=invis]
@@ -142,7 +142,7 @@ strict digraph TOLLuK {
 
    subgraph cluster_year_3 {
       label="3.. vuosi"
-      graph[style=dotted]
+      graph[style=bold]
 
       subgraph cluster_general {
          label="Yleiset opinnot"

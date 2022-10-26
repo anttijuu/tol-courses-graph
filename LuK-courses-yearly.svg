@@ -19,7 +19,7 @@
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_year_1</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-103 8,-964 1225,-964 1225,-103 8,-103"/>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-103 8,-964 1225,-964 1225,-103 8,-103"/>
 <text text-anchor="middle" x="616.5" y="-948.8" font-family="Times,serif" font-size="14.00">1. vuosi</text>
 </g>
 <g id="clust3" class="cluster">
@@ -42,7 +42,7 @@
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_year_2</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="1233,-293 1233,-834 2764.5,-834 2764.5,-293 1233,-293"/>
+<polygon fill="none" stroke="black" stroke-width="2" points="1233,-293 1233,-834 2764.5,-834 2764.5,-293 1233,-293"/>
 <text text-anchor="middle" x="1998.75" y="-818.8" font-family="Times,serif" font-size="14.00">2. vuosi</text>
 </g>
 <g id="clust10" class="cluster">
@@ -59,7 +59,7 @@
 </g>
 <g id="clust14" class="cluster">
 <title>cluster_year_3</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="2452,-64 2452,-285 3538,-285 3538,-64 2452,-64"/>
+<polygon fill="none" stroke="black" stroke-width="2" points="2452,-64 2452,-285 3538,-285 3538,-64 2452,-64"/>
 <text text-anchor="middle" x="2995" y="-269.8" font-family="Times,serif" font-size="14.00">3.. vuosi</text>
 </g>
 <g id="clust15" class="cluster">
