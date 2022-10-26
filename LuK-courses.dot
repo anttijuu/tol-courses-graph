@@ -56,7 +56,7 @@ digraph TOLLuK {
       c811322A -> c811367A
       c811367A -> c811368A
       c811325A -> c811312A
-      c811322A -> c811325A
+      c811104P -> c811325A
    }
    
    subgraph cluster_Ohjelmistokehitys {
