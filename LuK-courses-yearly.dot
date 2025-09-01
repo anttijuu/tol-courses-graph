@@ -90,7 +90,7 @@ strict digraph TOLLuK {
          label="Ohjelmointi"
          node [fillcolor=gold1]
          c811325A [label="{ 811325A | Tietokannat | { 2 | 1 } }"]
-         c811312A [label="{ 811312A | Tietorakenteet ja algoritmit | { 2 | 2 } }"]
+         c811312A [label="{ 811312A | Tietorakenteet ja algoritmit | { 2 | 1-2 } }"]
          c811367A [label="{ 811367A | Ohjelmointi 3 | { 2 | 3 } }"]
          c811368A [label="{ 811368A | Ohjelmointi 4 | { 2 | 4 } }"]
 
